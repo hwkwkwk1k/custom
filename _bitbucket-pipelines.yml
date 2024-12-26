@@ -1,0 +1,9 @@
+image: python:3.8
+
+pipelines:
+  default:
+    - step:
+        name: Run Telegram Bot
+        script:
+          - pip install pyTelegramBotAPI
+          - python RAGNAROK.py
